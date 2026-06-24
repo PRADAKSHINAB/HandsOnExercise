@@ -1,0 +1,11 @@
+public class FinancialForecast {
+    public static void main(String[] args) {
+
+        double amount = 10000;
+        double rate = 10;
+
+        amount = amount + (amount * rate / 100);
+
+        System.out.println("Future Amount = " + amount);
+    }
+}
