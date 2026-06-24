@@ -1,0 +1,17 @@
+public class SearchProduct {
+    public static void main(String[] args) {
+
+        String[] products = {"Laptop", "Mobile", "Watch"};
+
+        String search = "Mobile";
+
+        for (String p : products) {
+            if (p.equals(search)) {
+                System.out.println("Product Found");
+                return;
+            }
+        }
+
+        System.out.println("Product Not Found");
+    }
+}
