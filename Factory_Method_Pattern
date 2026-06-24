@@ -1,0 +1,25 @@
+interface Vehicle {
+    void display();
+}
+
+class Car implements Vehicle {
+    public void display() {
+        System.out.println("Car Created");
+    }
+}
+
+class VehicleFactory {
+    Vehicle getVehicle() {
+        return new Car();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        VehicleFactory f = new VehicleFactory();
+        Vehicle v = f.getVehicle();
+        v.display();
+    }
+}
+
+OUTPUT: Car Created
